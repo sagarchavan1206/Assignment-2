@@ -1,0 +1,14 @@
+#3) Write a python program to remove i’th character from string in different ways
+s1=input("enter the string==")
+k=len(s1)
+print("original string ==",s1)
+s2=""
+for i in range(k):
+    if i!=2:
+        s2=s2+s1[i]
+print("new string",s2)
+
+#output:-
+#enter the string==sagarchavan
+#original string == sagarchavan
+#new string saarchavan
