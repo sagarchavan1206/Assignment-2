@@ -1,0 +1,8 @@
+#2) Write a python program to Reverse words in a given String
+s=input("Enter The Sentence:")
+k=s.split()
+
+print(" ".join(reversed(k)))
+'''output:
+Enter The Sentence:india is my country
+country my is india'''
