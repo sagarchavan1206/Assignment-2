@@ -1,0 +1,50 @@
+#SET A
+#Strings
+#1) Write a python program to check whether the string is Symmetrical or Palindrome
+s=input("enter the string ==")
+k=s[::-1]
+if(s==k):
+    print("string is palindrome")
+else:
+    print("string is not palindrome")
+#or
+s=input("Enter The String ==")
+k="".join(reversed(s))
+print(k)
+if(s==k):
+        print("string is palindrome")
+else:
+    print("string is not palindrome")
+#or symetric
+s=input("enter the String==")
+k=len(s)
+f=0
+if(k%2):
+    mid=(k//2)+1
+else:
+    mid=k//2
+    st=0
+    end=mid
+    while(st<mid and end<k):
+        if(s[st]==s[end]):
+            st=st+1
+            end=end+1
+        else:
+            f=1;
+            break
+if(f==0):
+    print("string is symmetric")
+else:
+    print("String is not Symmetric")
+
+
+    '''Output:-
+enter the string ==sagar
+string is not palindrome
+Enter The String ==nayan
+nayan
+string is palindrome
+enter the String==dddd
+string is symmetric
+'''
+    
